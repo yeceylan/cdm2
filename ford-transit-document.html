@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Transit Parts Document</title>
+    <style>
+        @page { size: A4; margin: 0; }
+        
+        * { box-sizing: border-box; }
+        
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background: #fff;
+            color: #000;
+            font-size: 11px;
+            line-height: 1.2;
+        }
+        
+        .document {
+            width: 100%;
+            padding: 8mm;
+        }
+        
+        .top-border {
+            border-top: 2px solid #000;
+            border-left: 2px solid #000;
+            border-right: 2px solid #000;
+            padding: 4mm;
+        }
+        
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8mm;
+            font-size: 11px;
+        }
+        
+        .header-left div {
+            margin: 1px 0;
+        }
+        
+        .ford-company {
+            font-size: 11px;
+            font-weight: normal;
+        }
+        
+        .dealer-text {
+            font-size: 10px;
+        }
+        
+        .dealer-number {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 2px 0 !important;
+        }
+        
+        .stop-text {
+            font-size: 9px;
+        }
+        
+        .header-center {
+            text-align: left;
+            padding-left: 5mm;
+        }
+        
+        .header-center div {
+            margin: 1px 0;
+            font-size: 11px;
+        }
+        
+        .header-right {
+            text-align: right;
+        }
+        
+        .header-right div {
+            margin: 1px 0;
+            font-size: 11px;
+        }
+        
+        .ship-section {
+            margin: 4mm 0;
+            font-size: 11px;
+        }
+        
+        .ship-section div {
+            margin: 1px 0;
+        }
+        
+        .middle-border {
+            border-left: 2px solid #000;
+            border-right: 2px solid #000;
+            border-top: 1px solid #000;
+            padding: 3mm 4mm;
+        }
+        
+        .original-text {
+            text-align: right;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 2mm;
+        }
+        
+        .vehicle-info {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 3mm 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+        }
+        
+        .parts-section {
+            border-left: 2px solid #000;
+            border-right: 2px solid #000;
+            border-bottom: 2px solid #000;
+            padding: 0;
+        }
+        
+        .ford-header {
+            display: flex;
+            align-items: center;
+            gap: 4mm;
+            padding: 3mm 4mm;
+            border-bottom: 1px solid #000;
+            background: #e8e8e8;
+            font-size: 10px;
+        }
+        
+        .ford-oval {
+            width: 28px;
+            height: 14px;
+            background: #1f4788;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 7px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        
+        .loose-parts-text {
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .transport-text {
+            font-size: 9px;
+            font-style: italic;
+        }
+        
+        .logical-section {
+            padding: 3mm 4mm;
+            font-size: 10px;
+            border-bottom: 1px solid #000;
+        }
+        
+        .parts-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9px;
+        }
+        
+        .parts-table th {
+            background: #f0f0f0;
+            padding: 3mm;
+            border: 1px solid #000;
+            font-weight: normal;
+            text-align: center;
+            font-size: 9px;
+        }
+        
+        .parts-table td {
+            padding: 3mm;
+            border: 1px solid #000;
+            vertical-align: top;
+            font-size: 9px;
+        }
+        
+        .part-number {
+            text-align: left;
+            font-weight: normal;
+        }
+        
+        .quantity {
+            text-align: center;
+            font-weight: normal;
+        }
+        
+        @media print {
+            body { margin: 0; }
+            .document { padding: 5mm; }
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <div class="top-border">
+            <div class="header">
+                <div class="header-left">
+                    <div class="ford-company">FORD OTOMOTİV SANAYİ A.Ş.</div>
+                    <div class="dealer-text">DEALER</div>
+                    <div class="dealer-number">15090</div>
+                    <div class="stop-text">STOP</div>
+                </div>
+                <div class="header-center">
+                    <div>FMS</div>
+                    <div>DEST &nbsp; DEL.POINT</div>
+                    <div>YA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -</div>
+                </div>
+                <div class="header-right">
+                    <div>COUNTRY &nbsp; DEALER</div>
+                    <div>AJ &nbsp;&nbsp;&nbsp;&nbsp; 15090</div>
+                </div>
+            </div>
+            
+            <div class="ship-section">
+                <div>Ship To: AUSTRALIA</div>
+                <div>15090: NO ADDRESS OF DEALERS</div>
+            </div>
+        </div>
+        
+        <div class="middle-border">
+            <div class="original-text">ORIGINAL</div>
+        </div>
+        
+        <div class="vehicle-info">
+            <span>Ford Transit 350L Regular Cargo Van</span>
+            <span>DIAMOND WHITE (ZAFAXXA)</span>
+        </div>
+        
+        <div class="parts-section">
+            <div class="ford-header">
+                <div class="ford-oval">Ford</div>
+                <div>
+                    <span class="loose-parts-text">Ford Otosan Loose parts check list</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="transport-text">This document must not be removed during transportation.</span>
+                </div>
+            </div>
+            
+            <div class="logical-section">
+                <div><strong>Model:</strong> Ford Transit 350L Regular Cargo Van</div>
+            </div>
+            
+            <table class="parts-table">
+                <thead>
+                    <tr>
+                        <th>Part Number</th>
+                        <th>Qty</th>
+                        <th>Features(England/Turkish)</th>
+                        <th>Features(England/Turkish)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="part-number">9577 Y93950 AC</td>
+                        <td class="quantity">1.00</td>
+                        <td>1 ANTENNA / 1 ANTEN</td>
+                        <td>LOOSE ITEM KIT / SERBEST PARÇA POSETİ</td>
+                    </tr>
+                    <tr>
+                        <td class="part-number">WV31 YZZ60 CA</td>
+                        <td class="quantity">3.00</td>
+                        <td>3 VEHICLE KEYS / F-OP-1E2</td>
+                        <td>DRIVER SIDE CUP HOLDER / SÜRÜCÜ TARAFI BARDAK</td>
+                    </tr>
+                    <tr>
+                        <td class="part-number">WV31 Y9C219 ZHA</td>
+                        <td class="quantity">1.00</td>
+                        <td>1 MANUEL BOOK / 1 KITAPÇIK</td>
+                        <td>LOOSE ITEM KIT / SERBEST PARÇA POSETİ</td>
+                    </tr>
+                    <tr>
+                        <td class="part-number">F231 Y130 EA</td>
+                        <td class="quantity">4.00</td>
+                        <td>4 WHEEL RIM COVERS / 4 JANT KAPAĞI</td>
+                        <td>LOOSE ITEM KIT / SERBEST PARÇA POSETİ</td>
+                    </tr>
+                    <tr>
+                        <td class="part-number">WV31 YZZ60 CA</td>
+                        <td class="quantity">3.00</td>
+                        <td>F-OP-1E2 / F-OP-1E2</td>
+                        <td>DRIVER SIDE CUP HOLDER / SÜRÜCÜ TARAFI BARDAK</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
