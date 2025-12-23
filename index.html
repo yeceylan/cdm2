@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Ford Transit Parts Document</title>
     <style>
         @page { size: A4; margin: 0; }
@@ -194,6 +194,105 @@
         @media print {
             body { margin: 0; }
             .document { padding: 5mm; }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .document {
+                padding: 3mm;
+            }
+            
+            .top-border {
+                padding: 2mm;
+            }
+            
+            .header {
+                gap: 3mm;
+                font-size: 8px;
+            }
+            
+            .ford-company {
+                font-size: 8px;
+            }
+            
+            .dealer-text {
+                font-size: 7px;
+            }
+            
+            .dealer-number {
+                font-size: 14px;
+            }
+            
+            .stop-text {
+                font-size: 7px;
+            }
+            
+            .header-center div,
+            .header-right div {
+                font-size: 8px;
+            }
+            
+            .ship-section {
+                font-size: 8px;
+                margin: 2mm 0;
+            }
+            
+            .middle-border {
+                padding: 2mm;
+            }
+            
+            .original-text {
+                font-size: 10px;
+            }
+            
+            .vehicle-info {
+                font-size: 9px;
+                padding: 2mm 0;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1mm;
+            }
+            
+            .ford-header {
+                padding: 2mm;
+                gap: 2mm;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .ford-oval {
+                width: 24px;
+                height: 12px;
+                font-size: 6px;
+            }
+            
+            .loose-parts-text {
+                font-size: 8px;
+            }
+            
+            .transport-text {
+                font-size: 7px;
+                display: block;
+                margin-top: 1mm;
+            }
+            
+            .logical-section {
+                padding: 2mm;
+                font-size: 7px;
+            }
+            
+            .parts-table {
+                font-size: 6px;
+            }
+            
+            .parts-table th,
+            .parts-table td {
+                padding: 1mm;
+                font-size: 6px;
+            }
+            
+            .parts-table th {
+                font-size: 6px;
+            }
         }
     </style>
 </head>
